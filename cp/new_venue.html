@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+  
+<!--
+<header>
+    <h1>Our Event Decorators</h1>
+</header>
+-->
+
+<div class="soha">
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="col-md-3 mb-2 mb-md-0">
+       
+          
+         <a class="navbar-brand" href="#">
+                <img src="./images/event oasis name.png" alt="Bootstrap" width="180" height="50">
+              </a>
+         
+    </div>
+<!--navbar-->
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="./index.html" class="nav-link px-2 link-secondary">Home</a></li>
+            <li> <!-- List item for Services link -->
+                <a href="#" class="nav-link px-2 ">Services</a> <!-- Services link -->
+            </li>
+            <!--
+                <li>  List item for dropdown button 
+                <div class="dropdown">
+                    <a href="#" class="nav-link px-2  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false"></a>  Dropdown toggle button 
+                    <ul class="dropdown-menu text-small">  Dropdown menu 
+                        <li><a class="dropdown-item" href="#">Venues</a></li>
+                        <li><a class="dropdown-item" href="#">Caterers</a></li>
+                        <li><a class="dropdown-item" href="#">Decorators</a></li>
+                    </ul>
+                </div>
+            </li>-->
+      <li><a href="#" class="nav-link px-2">About</a></li>
+      <li><a href="./new_wishlist.html" class="nav-link px-2">Wishlist</a></li>
+      <li><a href="#" class="nav-link px-2">JoinUs</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+      <button type="button " class="btn btn-outline-primary me-2"><a href="./Login & Signup/signin.html"
+              style="text-decoration: none;">Login</a></button>
+      <button type="button" class="btn btn-primary"><a href="./Login & Signup/signup.html"
+              style="text-decoration: none; color: white;">Sign-up</a></button>
+  </div>
+     
+
+</header>
+</div>
+
+<header>
+    <!-- Part 2 -->
+    <div class="header-part-2">
+        <div class="background-image">
+            <h1>Our Event Venue</h1>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <button class="dropbtn">Select Category </button>
+                    <div class="dropdown-content">
+                        <a href="#">Birthday Party</a>
+                        <a href="#">Weddings</a>
+                        <a href="#">Baby Shower</a>
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <button class="dropbtn">Select Locations </button>
+                    <div class="dropdown-content">
+                        <a href="#">Ahmedabad</a>
+                        <a href="#">Mehsana</a>
+                    </div>
+                </div>
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+<!--popular venues-->
+
+<div class="dropdown-container">
+    <div class="dropdown">
+        <button class="dropbtn">Number of Guest</button>
+        <div class="dropdown-content">
+            <a href="#">Less than 500</a>
+            <a href="#">More than 500</a>
+        
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Venue Type </button>
+        <div class="dropdown-content">
+            <a href="#">Restaurant</a>
+            <a href="#">Banquet Hall</a>
+            <a href="#">Theatre</a>
+            <a href="#">Stadium</a>
+            <a href="#">Club / Lounge</a>
+            <a href="#">Art Gallery</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Space Preferances </button>
+        <div class="dropdown-content">
+            <a href="#">Indoor</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Both</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Ratings</button>
+        <div class="dropdown-content">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </div>
+    </div>
+    <button class="search-button">Search</button>
+</div>
+<br>
+<style>
+.dropdown-container {
+    text-align: center;
+}
+
+.dropdown {
+    display: inline-block;
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+.dropbtn {
+    background-color: #ffffff; /* White background */
+    color: #808080; /* Grey text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;
+    border: 1px solid #808080; /* Grey border */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-button {
+    background-color: #808080; /* Grey background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 1px solid #808080; /* Grey border */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+}</style>
+  <h2 class="product-category" style="text-align: center;">Wedding Venues</h2>
+ 
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="./images/04.jpg" class="card-img-top" alt="...">
+          <div class="card-body">            
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+            <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+            <div class="ratings">
+                <span> &#9825;</span>
+            </div>          </div>
+        </div>
+        <div class="card">
+          <img src="./images/05" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+        <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+        <div class="ratings">
+         <span> &#9825;</span>
+        </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/06.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+            <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+            <div class="ratings">
+                <span> &#9825;</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/05.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+        <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+        <div class="ratings">
+         <span> &#9825;</span>
+        </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    
+    <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">            
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+              <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+              <div class="ratings">
+                 <span> &#9825;</span>
+              </div>          </div>
+          </div>
+          <div class="card">
+            <img src="./images/02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+          <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+          <div class="ratings">
+            <span> &#9825;</span>
+          </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+              <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+              <div class="ratings">
+                <span> &#9825;</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/05.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+          <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+          <div class="ratings">
+            <span> &#9825;</span>
+          </div>
+            </div>
+          </div>
+  
+          
+        </div>
+      </div>
+    
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="./images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">            
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+            <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+            <div class="ratings">
+               <span> &#9825;</span>
+            </div>          </div>
+        </div>
+        <div class="card">
+          <img src="./images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+        <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+        <div class="ratings">
+            <span> &#9825;</span>
+        </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+            <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+            <div class="ratings">
+                <span> &#9825;</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+        <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+        <div class="ratings">
+            <span> &#9825;</span>
+        </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    
+    <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">            
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+              <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+              <div class="ratings">
+                <span> &#9825;</span>
+              </div>          </div>
+          </div>
+          <div class="card">
+            <img src="./images/02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+          <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+          <div class="ratings">
+            <span> &#9825;</span>
+          </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/04.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+              <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+              <div class="ratings">
+                 <!-- 5 star symbols -->
+                 <span> &#9825;</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/06.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+          <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+          <div class="ratings">
+            <span> &#9825;</span>
+          </div>
+            </div>
+          </div>
+  
+          
+        </div>
+      </div>
+    
+  </div>
+
+<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button" id="hhh">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">»</a>
+    </div>
+  </div>
+  <br>
+ <br>
+  <h2 class="product-category" style="text-align: center;">Popular Venues</h2>
+  <br>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="./images/02.jpg" class="card-img-top" alt="...">
+          <div class="card-body">            
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+            <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+            <div class="ratings">
+                <span> &#9825;</span>
+            </div>          </div>
+        </div>
+        <div class="card">
+          <img src="./images/01.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+        <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+        <div class="ratings">
+         <span> &#9825;</span>
+        </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./06.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+            <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+            <div class="ratings">
+                <span> &#9825;</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/05.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+        <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+        <div class="ratings">
+         <span> &#9825;</span>
+        </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+    
+    
+ 
+    
+    <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/04.jpg" class="card-img-top" alt="...">
+            <div class="card-body">            
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+              <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+              <div class="ratings">
+                 <span> &#9825;</span>
+              </div>          </div>
+          </div>
+          <div class="card">
+            <img src="./images/03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+          <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+          <div class="ratings">
+            <span> &#9825;</span>
+          </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+              <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+              <div class="ratings">
+                <span> &#9825;</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>LOREM IPSUM RESORT, ABU DHABI</h6>
+          <p>Upto 500 Guests <br> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>  5 (22)</p>
+          <div class="ratings">
+            <span> &#9825;</span>
+          </div>
+            </div>
+          </div>
+  
+          
+        </div>
+      </div>
+
+  </div>
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button" id="hhh">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" id="hhh">»</a>
+    </div>
+  </div>
+<!-- 
+    <footer>
+        <p>&copy; 2023 Decorators Page. All rights reserved.</p>
+    </footer>
+-->
+<!--
+    <footer>
+    <div class="footer-container">
+        <div class="footer-list">
+            <h3>Decorators</h3>
+            <ul>
+                <li><a href="#">Swastik Decorators</a></li>
+                <li><a href="#">Sahyod Decorators</a></li>
+                <li><a href="#">Kadam Florists and Decorators</a></li>
+                <li><a href="#">IBS Decorator</a></li>
+                <li><a href="#">Omkar Decoration</a></li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h3>Suppliers</h3>
+            <ul>
+                <li><a href="#">Decorators</a></li>
+                <li><a href="#">Caterers</a></li>
+                <li><a href="#">Venue Owners</a></li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+-->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <p class="col-md-4 mb-0 text-body-secondary">© 2024 Event Oasis, Inc</p>
+  
+
+  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <img src="./images/event oasis name.png" alt="event oasis link" width="180" height="50">
+           
+  </a>
+
+  <ul class="nav col-md-4 justify-content-end">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+  </ul>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

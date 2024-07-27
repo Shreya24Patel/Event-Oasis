@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Header */
+    header {
+      text-align: center;
+      background-color: #d4c4db;
+      background-size: cover;
+      padding: 0px;
+    }
+    
+    /* Main */
+    main {
+      padding: 20px;
+    }
+
+    .event-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .event-image {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .event-image img {
+      width: 300px;
+      height: 200px;
+      
+      border-radius: 10px;
+    }
+
+    .image-details {
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-list h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list ul li {
+    margin-bottom: 5px;
+}
+
+.footer-list ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-list ul li a:hover {
+    text-decoration: underline;
+}
+    /* Add margin to the remove button */
+.remove-btn {
+  margin-top: 10px;
+  
+}
+.soha{
+    background-color: #F8E9E9; 
+    text-align: center;
+}
+.h1{
+  text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8E9E9;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="soha">
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="col-md-3 mb-2 mb-md-0">
+       
+          
+         <a class="navbar-brand" href="#">
+                <img src="./images/event oasis name.png" alt="event oasis" width="180" height="50">
+              </a>
+         
+    </div>
+<!--navbar-->
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="./index.html" class="nav-link px-2 link-secondary">Home</a></li>
+            <li> <!-- List item for Services link -->
+                <a href="#" class="nav-link px-2 ">Services</a> <!-- Services link -->
+            </li>
+            <!--
+                <li>  List item for dropdown button 
+                <div class="dropdown">
+                    <a href="#" class="nav-link px-2  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false"></a>  Dropdown toggle button 
+                    <ul class="dropdown-menu text-small">  Dropdown menu 
+                        <li><a class="dropdown-item" href="#">Venues</a></li>
+                        <li><a class="dropdown-item" href="#">Caterers</a></li>
+                        <li><a class="dropdown-item" href="#">Decorators</a></li>
+                    </ul>
+                </div>
+            </li>-->
+      <li><a href="#" class="nav-link px-2">About</a></li>
+      <li><a href="./new_wishlist.html" class="nav-link px-2">Wishlist</a></li>
+      <li><a href="#" class="nav-link px-2">JoinUs</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+      <button type="button " class="btn btn-outline-primary me-2"><a href="./Login & Signup/signin.html"
+              style="text-decoration: none;">Login</a></button>
+      <button type="button" class="btn btn-primary"><a href="./Login & Signup/signup.html"
+              style="text-decoration: none; color: white;">Sign-up</a></button>
+  </div>
+    
+  </header>
+  <div class="soha">
+    <h1 class="hi">We are Event Oasis<br>we bring dream Events <br> to life</h1>
+</div>
+  <main>
+    <div class="event-images">
+      <!-- Image 1 -->
+      <div class="event-image">
+        <img src="./images/01.jpg" alt="Event Image">
+        <div class="image-details">
+          <h5>Prime Restaurant, Mehsana</h5>
+          <p>Rating: 4.5 stars</p>
+          <p>Guests: Up to 200</p>
+          <button class="btn btn-primary" onclick="removeItem()">Remove</button>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="event-image">
+        <img src="./images/02.jpg" alt="Event Image">
+        <div class="image-details">
+          <h5>Unique Restaurant, Mehsana </h5>
+          <p>Rating: 4.7 stars</p>
+          <p>Guests: Up to 150</p>
+          <button class="btn btn-primary" onclick="removeItem()">Remove</button>
+        </div>
+      </div>
+
+      <!-- Add more event images here -->
+    </div>
+  </main>
+  <script>
+    // Function to simulate adding venue to wishlist and printing message
+    function addToWishlist(venueId) {
+      // Simulate adding venue to wishlist
+      console.log("Adding venue with ID " + venueId + " to wishlist...");
+      
+      // Simulate removing button and printing message
+      var button = document.getElementById("wishlistButton-" + venueId);
+      if (button) {
+        button.parentNode.removeChild(button); // Remove button from DOM
+        console.log("Item removed");
+      } else {
+        console.log("Button not found");
+      }
+    }
+  </script>
+ <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <p class="col-md-4 mb-0 text-body-secondary">© 2024 Event Oasis, Inc</p>
+  
+
+  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <img src="./images/event oasis name.png" alt="event oasis link" width="180" height="50">
+           
+  </a>
+
+  <ul class="nav col-md-4 justify-content-end">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+  </ul>
+</footer>
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

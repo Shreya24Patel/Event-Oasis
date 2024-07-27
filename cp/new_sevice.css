@@ -1,0 +1,71 @@
+.body {
+  background-color:aliceblue ;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #D4C4DB ;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-details {
+    margin-bottom: 20px;
+  }
+  
+  .office-select,.special-instructions,.reference-number,.field-of-specialization {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #7469B6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #301f94;
+  }
+  
+  .nav {
+    margin-top: 20px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    color: #23527c;
+  }

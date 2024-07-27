@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space
+}
+
+#search-input {
+    width: 50%;
+    height: 2em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    padding: 0 1em;
+    color: #333;
+}
+
+#search-input:focus {
+    border-color: #333;
+    box-shadow: 0 0 2px 1px #333;
+}
+
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+section li {
+    margin-bottom: 1em;
+}
+
+section li:nth-child(2n) {
+    margin-right: 0;
+}
+
+section li a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    text-decoration: none;
+    text-align: center;
+}
+
+section li a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        margin-right: 0;
+    }
+}

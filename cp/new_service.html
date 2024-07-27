@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Oasis - Service Provider Dashboard</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="new_sevice.css"> <!-- external stylesheet -->
+</head>
+<body class = "body">
+<div class="container">
+  <h2>Service Provider Information</h2>
+  <form onsubmit="addNewService(event)" id="service-form">
+      <div class="service-provider-name">
+      <label for="name">Service Provider Name</label>
+      <input type="text" id="name" name="name"/>
+    </div>
+    <div class="service-type">
+      <label>Service Type</label>
+      <select name="type" id="type">
+        <option value="Venue">Venue</option>
+        <option value="Caterers">Caterers</option>
+        <option value="Decorators">Decorators</option>
+    
+        <!-- add service type options here -->
+      </select>
+    </div>
+    <div class="location">
+      <label>Location</label>
+      <input type="text" name="location" id="location"/>
+    </div> <!-- added location column here -->
+    <div class="capacity">
+      <label>Capacity</label>
+      <input type="text" name="capacity" id="capacity"/>
+    </div>
+    <div class="description">
+      <label>Description</label>
+      <textarea name="description" id="description"></textarea>
+    </div>
+    <div class="images">
+      <label>Images</label>
+      <input type="file" multiple name="images" id="images"/>
+    </div>
+    <div class="buttons">
+      <input type="submit">Save Service Provider</button>
+    </div>
+  </form>
+  </div>
+  <script src="common.js"></script>
+  <script src="services.js"></script>
+  <script>
+    window.onload = async () => {
+      const loggedIn = await isLoggedIn();
+      if(!isLoggedIn) window.location.href = "/Login & Signup/signin.html";
+    }
+    
+  </script>
+</body>
+</html>

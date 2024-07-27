@@ -1,0 +1,42 @@
+/* styles.css */
+.body {
+  background-color: aliceblue;
+}
+.sidebar {
+
+    position: sticky;
+    top: 0;
+  bottom: 0;
+  height: calc(100vh - 56px);
+    background-color: #343a40; /* Dark grey */
+    padding: 20px;
+    color: #fff; /* White text */
+  }
+.search-bar {
+    width: 150px;
+  }
+  .list-group-item {
+    cursor: pointer;
+    background-color: #454d55; /* Darker grey */
+    border-color: #343a40; /* Dark grey */
+  }
+  
+  .list-group-item:hover {
+    background-color: #343a40; /* Dark grey */
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6; /* Light grey */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Shadow */
+  }
+  
+  .card-header {
+    background-color:#D4C4DB ; /* Blue */
+    color: #fff; /* White text */
+  }
+  
